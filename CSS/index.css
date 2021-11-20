@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+ color:#555;
+ background-color: #f4f4f4;
+ font: normal 14px Arial, Helvetica, sans-serif ;
+ line-height: 1.5em;
+ margin:0px;
+
+}
+.container{
+    width: 96%;
+    margin: auto;
+}
+
+.flex-container{
+    
+    display: flex;
+    align-items: stretch;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: yellow;
+}
+.button{
+    padding: 10px;
+    margin:10px;
+}
+.button a{
+    padding: 10px;
+    margin: 10px;
+    background-color: grey;
+}
+.button a:hover{
+    background-color:black;
+    color: white;
+}
+.Rbutton{
+    padding: 10px;
+    margin:10px 5px;
+    background-color:gray;
+}
+.Rbutton:hover{
+    background-color:black;
+    color: white;
+
+}
+.clr{
+    clear: both;
+}
+.fixed{
+   position:fixed;
+   top: 250px;
+   padding: 7px;
+   background-color: #333;
+   color: white;
+}
+.fixed:hover{
+    background-color: gray;
+    color: black;
+}
+
+#main-header{
+    padding: 30px 0px;
+    color: white;
+    background-color: coral;
+    margin-bottom: 0px;
+    margin-top: 0;
+}
+#main-header h1{
+    font-size: 35px;
+}
+
+.headings{
+    margin-top: 5px;
+    border:1px solid black;
+    padding:20px;
+    background-color: #333;
+    color: white;
+}
+#main-block{
+    margin-top: 10px;
+    padding: 20px;
+    flex: 2;
+    
+}
+#main-block h1{
+    padding: 10px;
+    padding-left: 0px;
+}
+#side-bar{
+    margin-top:10px;
+    flex: 1;
+    background-color: #333;
+    color: white;
+    padding:20px;
+
+}
+#main{
+    border: 1px solid black;
+    min-height: 300px;
+    margin-top:0px;
+    background-image: url('../Image Gallery/LA.jpg');
+    background-repeat: no-repeat;
+    background-position:center center;
+    position:relative;
+    color: white;
+    line-height: 2em;
+}
+
+#main h1{
+    position:absolute;
+    top: 50px;
+    left: 70px;
+}
+#main h2{
+    position: absolute;
+    bottom: 50px;
+    right: 70px;
+}
+#main-nav{
+    background-color: #333;
+    padding: 20px;
+    padding-left: 0;
+}
+#main-nav li{
+    list-style: none;
+    display: inline;
+    padding-right: 10px;
+    font-size: 16px;
+}
+#main-footer{
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+@media(max-width:600px){
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
